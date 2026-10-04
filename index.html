@@ -3,39 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Rules Editor</title>
+    <title>viewsource://useful-scripts</title>
 
-    <style>
-        body {
-            margin: auto;
-            max-width: 700px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #333;
-            color: #eee;
-        }
+    <link rel="stylesheet" href="./libs/styles/default.min.css">
+    <link rel="stylesheet" href="./libs/styles/monokai-sublime.min.css">
+    <script src="libs/highlight.min.js"></script>
+    <script src="libs/highlight_linenum.js"></script>
+    <script src="libs/javascript.min.js"></script>
 
-        button {
-            padding: 10px 15px;
-            border: none;
-            cursor: pointer;
-            margin: 2px;
-            border-radius: 5px;
-            background-color: #444;
-            color: #eee;
-        }
-
-        button:hover {
-            background: #111;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
 </head>
 
 <body>
-    <script type="module" src="./index.js"></script>
+    <button type="button" id="copy-btn">Copy source code</button>
+
+    <pre>
+        <code class="language-js"></code>
+    </pre>
 </body>
 
 </html>
